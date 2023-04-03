@@ -1,0 +1,256 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 12px;
+}
+
+/* 
+KIRISPE
+*/
+
+.site-cover{
+    height: 1080px;
+    color: white;
+}
+
+.uni-text{
+    font-size: 24px;
+    width: 700px;
+    padding: 10px 0 40px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.uni-img{
+    width: 240px;
+    margin: 0 auto;
+}
+
+.uni-img img{
+    width: 100%;
+}
+
+.diploma-title{
+    font-size: 36px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    width: 700px;
+    margin: 60px auto 30px; 
+}
+
+.diploma-description{
+    text-align: center;
+    width: 700px;
+    margin: 0 auto;
+    font-size: 24px;
+}
+
+.diploma-author{
+    text-align: right;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 60px 200px 0 0;
+}
+
+.kirispe{
+    width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.kirispe-left{
+    width: 45%;
+}
+
+.kirispe-right{
+    width: 45%;
+}
+
+.kirispe-left img{
+    width: 100%;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+
+.kirispe-title{
+    font-weight: 700;
+    font-size: 28px;
+    color: #F9F871;
+}
+
+.kirispe-text{
+    font-size: 20px;
+    color: white;
+    margin-top: 30px;
+    line-height: 25px;
+}
+
+.kirispe-btn{
+    width: max-content;
+    margin: 60px auto;
+}
+.kirispe-btn a{
+    border-radius: 10px;
+    background: #00C9A6;
+    padding: 30px 60px;
+    font-size: 24px;
+    text-decoration: none;
+    color: white;
+}
+
+.container{
+    width: 100%;
+    margin: 0 auto;
+    min-height: 100vh;
+}
+
+.left{
+    width: 20%;
+    min-height: 100vh;
+    background-color: #6579c2;
+    box-shadow: 1px 0px 1px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    position: fixed;
+    left: 0;
+}
+
+.right{
+    width: 80%;
+    min-height: 100vh;
+    position: absolute;
+    right: 0;
+}
+
+.nav-item a{
+    display: block;
+    padding: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25); 
+    text-decoration: none;
+    color: black;
+    background-color: #6579c2;
+    transition: 0.3s;
+    color: white;
+}
+
+.nav-item a:hover{
+    background-color: #5e6faf;
+}
+
+
+
+
+
+
+
+.menu{
+    display: flex;
+    align-items: center;
+    background-color: #6579c2;
+}
+
+.menu-item{
+    padding: 20px;
+    color: white;
+    background-color: #6579c2;
+    transition: 0.3s;
+}
+
+.menu-item:hover{
+    background-color: #5e6faf;
+}
+
+.right-container{
+    width: 100%;
+    position:relative;
+    top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.sections{
+    position: absolute;
+    display: none;
+    width: 90%;
+}
+
+#bio{
+    display: block;
+}
+
+.biography{
+    display: flex;
+    justify-content: space-between;
+}
+
+.bio-img{
+    width: 30%;
+}
+
+.bio-img img{
+    width: 100%;
+}
+
+.bio{
+    width: 65%;
+}
+
+.bio-name{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.bio-text{
+    font-size: 14px;
+}
+
+.bio-gallery{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.bio-image{
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.bio-image img{
+    height: 100%;
+}
+
+@media all and (max-width: 1024px){
+    .kirispe{
+        width: 768px;
+    }
+}
+
+@media all and (max-width: 768px){
+    .kirispe{
+        width: 480px;
+    }
+
+    .diploma-author{
+        margin-right: 20px;
+    }
+
+    .diploma-title{
+        font-size: 28px;
+        width: 90%;
+    }
+
+    .diploma-description{
+        width: 90%;
+    }
+
+    .kirispe-text{
+        font-size: 16px;
+    }
+}

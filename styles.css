@@ -120,6 +120,7 @@ KIRISPE
     min-height: 100vh;
     position: absolute;
     right: 0;
+    padding: 25px 50px;
 }
 
 
@@ -181,18 +182,24 @@ KIRISPE
 .menu{
     display: flex;
     align-items: center;
-    background-color: #6579c2;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .menu-item{
-    padding: 20px;
+    padding: 15px 20px;
     color: white;
-    background-color: #6579c2;
+    background-color: #218CC8;
     transition: 0.3s;
+    font-size: 18px;
+    border-radius: 5px;
 }
 
 .menu-item:hover{
-    background-color: #5e6faf;
+    background-color: #1A5F86;
+}
+.menu-active{
+    background: #1A5F86 !important;
 }
 
 .right-container{
@@ -205,58 +212,82 @@ KIRISPE
 
 .sections{
     position: absolute;
+    width: 100%;
     display: none;
-    width: 90%;
 }
 
 #bio{
     display: block;
 }
 
-.biography{
-    display: flex;
-    justify-content: space-between;
-}
-
-.bio-img{
-    width: 30%;
-}
-
 .bio-img img{
     width: 100%;
-}
-
-.bio{
-    width: 65%;
 }
 
 .bio-name{
     font-size: 24px;
     font-weight: 700;
-    margin-bottom: 20px;
+    margin: 60px 0 25px;
 }
 
 .bio-text{
-    font-size: 14px;
+    font-size: 18px;
+    line-height: 25px;
 }
 
-.bio-gallery{
+.sections video{
+    width: 100%;
+    aspect-ratio: 16/9;
+}
+
+.audio h1{
+    margin: 40px 0px 20px;
+}
+
+.sostav{
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
+}
+
+.sostav-left{
+    width: 48%;
+}
+
+.sostav-text p{
+    font-size: 16px;
+    margin: 20px 0 40px;
+    line-height: 25px;
+}
+
+.sostav-right{
+    width: 48%;
+}
+
+.sostav-right img{
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.gallery{
+    display: flex;
     flex-wrap: wrap;
+    gap: 30px;
 }
 
-.bio-image{
-    width: 200px;
-    height: 200px;
-    border-radius: 20px;
-    overflow: hidden;
-    margin-top: 20px;
+.gallery-item{
+    max-width: 45%;
 }
 
-.bio-image img{
-    height: 100%;
+.gallery-item img{
+    width: 100%;
 }
+
+.gallery-item p{
+    text-align: center;
+    font-size: 24px;
+}
+
 
 @media all and (max-width: 1024px){
     .kirispe{
